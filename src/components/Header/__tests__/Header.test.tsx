@@ -32,12 +32,21 @@ describe('Testes para o componente Header', () => {
               preco: 180.9,
               precoAntigo: 250.9,
               titulo: 'Legacy'
+            },
+            {
+              id: 3,
+              categoria: 'RPG',
+              imagem: '',
+              plataformas: ['windows', 'PS5', 'Xbox Series'],
+              preco: 180.9,
+              precoAntigo: 250.9,
+              titulo: 'Legacy'
             }
           ]
         }
       }
     })
 
-    expect(screen.getByTestId('qtd-carrinho').innerHTML).toContain('2 itens')
+    expect(screen.getByTestId('qtd-carrinho').innerHTML).toContain('3 itens')
   })
 })
